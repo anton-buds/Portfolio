@@ -72,7 +72,7 @@ export const Header = () => {
           >
             <Flex gap="4" vertical="center" textVariant="body-default-s">
               {routes["/"] && (
-                <ToggleButton prefixIcon="home" href="/" selected={pathname === "/"} />
+                <ToggleButton className="s-flex-hide" label="Home" prefixIcon="home" href="/" selected={pathname === "/"}/>
               )}
               <Line vert maxHeight="24" />
               {routes["/about"] && (
@@ -92,6 +92,7 @@ export const Header = () => {
                   />
                 </>
               )}
+              <Line vert maxHeight="24" />
               {routes["/work"] && (
                 <>
                   <ToggleButton
@@ -109,6 +110,7 @@ export const Header = () => {
                   />
                 </>
               )}
+              
               {routes["/blog"] && (
                 <>
                   <ToggleButton
@@ -126,6 +128,7 @@ export const Header = () => {
                   />
                 </>
               )}
+              <Line vert maxHeight="24" />
               {routes["/gallery"] && (
                 <>
                   <ToggleButton

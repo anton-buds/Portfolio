@@ -63,9 +63,9 @@ export default function Home() {
         }}
       />
       <Column fillWidth paddingY="l" gap="m">
-        <Column maxWidth="m">
+        <Column maxWidth="s">
           <RevealFx translateY="4" fillWidth horizontal="start" paddingBottom="m">
-            <Heading wrap="balance" variant="display-strong-l" onBackground="brand-medium">
+            <Heading wrap="balance" variant="display-strong-l" onBackground="brand-weak">
               {home.headline}
             </Heading>
           </RevealFx>

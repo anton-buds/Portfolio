@@ -168,9 +168,9 @@ export default function About() {
                 />
               </Flex>
             )}
-            <Heading
-              className={styles.textAlign}
-              variant="display-strong-xl"
+              <Heading
+                className={styles.textAlign}
+                variant="display-strong-xl"
               onBackground="brand-medium"
             >
               {person.name}
@@ -222,24 +222,7 @@ export default function About() {
 
           {about.intro.display && (
             <Column textVariant="body-default-l" fillWidth gap="m" marginBottom="l" onBackground="neutral-strong">
-              <LetterFx speed="fast" trigger="instant" charset={[
-                  'x',
-                  '@',
-                  '%',
-                  'a',
-                  '$',
-                  'h',
-                  'z',
-                  '0',
-                  'o',
-                  'y',
-                  'h',
-                  '?',
-                  '+',
-                  '=',
-                  '*',
-                  '!'
-    ]}>{about.intro.description}</LetterFx>
+              {about.intro.description}
             </Column>
           )}
 

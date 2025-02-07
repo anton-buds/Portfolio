@@ -55,7 +55,7 @@ const home = {
   headline: <>Front-End Developer</>,
   subline: (
     <>
-      I'm {person.firstName}, a Computer engineering student at <InlineCode>Don Honorio Ventura State University</InlineCode>, where I learned how to craft intuitive and user-friendly UI experiences. In my free time, I enjoy making mini projects that I can share with others.
+      I'm {person.firstName}, a Computer engineering student at <InlineCode>Don Honorio Ventura State University</InlineCode>,<br/>where I learned how to craft intuitive and user-friendly UI experiences. I enjoy working on projects that challenge my skills and push me to learn new things.
     </>
   ),
 };
@@ -173,11 +173,11 @@ const about = {
             height: 9,
           }, */
         ],
-      },
+      },  
       {
         title: "CSS Frameworks",
         description: (
-          <>Adept in using CSS and JavaScript frameworks such as Bootstrap and Tailwind</>
+          <>Adept in using CSS and JS frameworks such as Bootstrap,TailwindCSS, React, and Next.js</>
         ),
         // optional: leave the array empty if you don't want to display images
         images: [
@@ -241,10 +241,10 @@ const gallery = {
   label: "Gallery",
   title: "My photo gallery",
   description: `A photo collection by ${person.name}`,
-  // Images from https://pexels.com
+  
   images: [
     {
-      src: "/images/gallery/img-01.jpg",
+      src: "/images/gallery/avatar_solo.jpg",
       alt: "image",
       orientation: "vertical",
     },
@@ -254,7 +254,7 @@ const gallery = {
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-03.jpg",
+      src: "/images/gallery/avatar_group.jpg",
       alt: "image",
       orientation: "vertical",
     },
