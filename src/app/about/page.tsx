@@ -3,12 +3,15 @@ import {
   Button,
   Column,
   Flex,
+  GlitchFx,
   Heading,
   Icon,
   IconButton,
+  LetterFx,
   SmartImage,
   Tag,
   Text,
+  TiltFx,
 } from "@/once-ui/components";
 import { baseURL } from "@/app/resources";
 import TableOfContents from "@/components/about/TableOfContents";
@@ -93,10 +96,10 @@ export default function About() {
       />
       {about.tableOfContent.display && (
         <Column
-          left="0"
+          left="80"
           style={{ top: "50%", transform: "translateY(-50%)" }}
           position="fixed"
-          paddingLeft="24"
+          paddingLeft="48"
           gap="32"
           hide="s"
         >
@@ -114,9 +117,11 @@ export default function About() {
             flex={3}
             horizontal="center"
           >
-            <Avatar src={person.avatar} size="xl" />
+            <GlitchFx>
+              <Avatar src={person.avatar} size="xl"/>
+            </GlitchFx>
             <Flex gap="8" vertical="center">
-              <Icon onBackground="accent-weak" name="globe" />
+              <Icon onBackground="brand-weak" name="globe" />
               {person.location}
             </Flex>
             {person.languages.length > 0 && (
@@ -141,13 +146,13 @@ export default function About() {
             {about.calendar.display && (
               <Flex
                 fitWidth
-                border="brand-alpha-medium"
+                border="brand-alpha-strong"
                 className={styles.blockAlign}
                 style={{
                   backdropFilter: "blur(var(--static-space-1))",
                 }}
                 background="brand-alpha-weak"
-                radius="full"
+                radius="m-4"
                 padding="4"
                 gap="8"
                 marginBottom="m"
@@ -158,7 +163,7 @@ export default function About() {
                 <IconButton
                   href={about.calendar.link}
                   data-border="rounded"
-                  variant="secondary"
+                  variant="ghost"
                   icon="chevronRight"
                 />
               </Flex>
@@ -169,7 +174,7 @@ export default function About() {
             <Text
               className={styles.textAlign}
               variant="display-default-xs"
-              onBackground="neutral-weak"
+              onBackground="brand-weak"
             >
               {person.role}
             </Text>
@@ -186,7 +191,7 @@ export default function About() {
                                 prefixIcon={item.icon}
                                 label={item.name}
                                 size="s"
-                                variant="secondary"
+                                variant="tertiary"
                             />
                             <IconButton
                                 className="s-flex-show"
@@ -197,15 +202,32 @@ export default function About() {
                                 variant="secondary"
                             />
                         </>
-                    ),
+                    ),  
                 )}
               </Flex>
             )}
           </Column>
 
           {about.intro.display && (
-            <Column textVariant="body-default-l" fillWidth gap="m" marginBottom="xl">
-              {about.intro.description}
+            <Column textVariant="body-default-l" fillWidth gap="m" marginBottom="l">
+              <LetterFx speed="fast" trigger="instant" charset={[
+                  'x',
+                  '@',
+                  '%',
+                  'a',
+                  '$',
+                  'h',
+                  'z',
+                  '0',
+                  'o',
+                  'y',
+                  'h',
+                  '?',
+                  '+',
+                  '=',
+                  '*',
+                  '!'
+    ]}>{about.intro.description}</LetterFx>
             </Column>
           )}
 
@@ -221,14 +243,14 @@ export default function About() {
                       <Text id={experience.company} variant="heading-strong-l">
                         {experience.company}
                       </Text>
-                      <Text variant="heading-default-xs" onBackground="neutral-weak">
+                      <Text variant="heading-default-xs" onBackground="neutral-medium">
                         {experience.timeframe}
                       </Text>
                     </Flex>
                     <Text variant="body-default-s" onBackground="brand-weak" marginBottom="m">
                       {experience.role}
                     </Text>
-                    <Column as="ul" gap="16">
+                    <Column as="ul" gap="8">
                       {experience.achievements.map((achievement: JSX.Element, index: number) => (
                         <Text
                           as="li"
@@ -251,16 +273,16 @@ export default function About() {
                             //@ts-ignore
                             height={image.height}
                           >
-                            <SmartImage
-                              enlarge
-                              radius="m"
-                              //@ts-ignore
-                              sizes={image.width.toString()}
-                              //@ts-ignore
-                              alt={image.alt}
-                              //@ts-ignore
-                              src={image.src}
-                            />
+                              <SmartImage
+                                enlarge
+                                radius="m"
+                                //@ts-ignore
+                                sizes={image.width.toString()}
+                                //@ts-ignore
+                                alt={image.alt}
+                                //@ts-ignore
+                                src={image.src}
+                              />
                           </Flex>
                         ))}
                       </Flex>
@@ -282,7 +304,7 @@ export default function About() {
                     <Text id={institution.name} variant="heading-strong-l">
                       {institution.name}
                     </Text>
-                    <Text variant="heading-default-xs" onBackground="neutral-weak">
+                    <Text variant="heading-default-xs" onBackground="brand-weak">
                       {institution.description}
                     </Text>
                   </Column>
@@ -305,7 +327,7 @@ export default function About() {
                 {about.technical.skills.map((skill, index) => (
                   <Column key={`${skill}-${index}`} fillWidth gap="4">
                     <Text variant="heading-strong-l">{skill.title}</Text>
-                    <Text variant="body-default-m" onBackground="neutral-weak">
+                    <Text variant="body-default-m" onBackground="brand-weak">
                       {skill.description}
                     </Text>
                     {skill.images && skill.images.length > 0 && (

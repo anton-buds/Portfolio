@@ -1,27 +1,27 @@
 import { InlineCode } from "@/once-ui/components";
-
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Anton",
+  lastName: "Buduan",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Computer Engineer | Front-End Developer",
+  avatar: "/images/avatar2.jpg",
+  location: "Asia/Manila", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Tagalog"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Start building your website today!</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      Connect with me and let's create something amazing together.
     </>
   ),
 };
+
+
 
 const social = [
   // Links are automatically displayed.
@@ -29,34 +29,33 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/anton-buds",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/anton-buduan/",
   },
   {
-    name: "X",
-    icon: "x",
-    link: "",
+    name: "Facebook",
+    icon: "facebook",
+    link: "https://www.facebook.com/antonbuds/",
   },
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:antonbuds7@outlook.com",
   },
 ];
 
 const home = {
   label: "Home",
-  title: `${person.name}'s Portfolio`,
+  title: `${person.firstName}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>Front-End Developer</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm {person.firstName}, a Computer engineering student at <InlineCode>Don Honorio Ventura State University</InlineCode>, where I learned how to craft intuitive and user-friendly UI experiences. In my free time, I enjoy making mini projects that I can share with others.
     </>
   ),
 };
@@ -81,7 +80,7 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
+        Anton is a Philippines-based Computer Engineering student and Front-End Developer with a passion for transforming complex challenges
         into simple, elegant design solutions. Her work spans digital interfaces, interactive
         experiences, and the convergence of design and technology.
       </>
@@ -89,32 +88,40 @@ const about = {
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Work/Related Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "AYMAGICAL LINE (Not Active)",
+        timeframe: "2023 February to April",
+        role: "Web Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Implemented secure payment processing and automated order confirmation system with email notifications
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Created a queue-based order processing system ensuring first-come-first-serve handling of customer orders
+          </>,
+          <>
+            Integrated customer feedback and review system to enhance product credibility and user trust
+          </>,
+          <>
+            Built real-time order tracking functionality and automated shipping status updates
+          </>,
+          <>
+            Successfully digitized the business operations, resulting in improved customer experience and streamlined order management
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/projects/project-01/AYMAGICALLINE.png",
+            alt: "AYMAGICAL LINE Project",
             width: 16,
             height: 9,
           },
         ],
       },
+      /* IF YOU WANT TO ADD MORE, JUST COPY THE TEMPLATE BELOW AND CHANGE THE DETAILS:
       {
         company: "Creativ3",
         timeframe: "2018 - 2022",
@@ -130,57 +137,80 @@ const about = {
           </>,
         ],
         images: [],
-      },
+      }, */
     ],
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Don Honorio Ventura State University | College",
+        description:
+          <>BS in Computer Engineering</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Don Bosco Academy | High School",
+        description: <>STEM strand</>,
+        image: "/images/dba.jpg", // Add your high school image here
       },
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Technical Skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "Web Builder",
+        description: (
+          <>Able to build website using website builders such as Hostinger Website Builder and WordPress</>
+        ),
         // optional: leave the array empty if you don't want to display images
         images: [
+          /* IF YOU WANT TO ADD IMAGES JUST COPY THE TEMPLATE BELOW AND CHANGE THE IMAGE PATH:
           {
             src: "/images/projects/project-01/cover-02.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+          }, */
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "CSS Frameworks",
+        description: (
+          <>Adept in using CSS and JavaScript frameworks such as Bootstrap and Tailwind</>
+        ),
         // optional: leave the array empty if you don't want to display images
         images: [
+          /* IF YOU WANT TO ADD IMAGES JUST COPY THE TEMPLATE BELOW AND CHANGE THE IMAGE PATH:
           {
-            src: "/images/projects/project-01/cover-04.jpg",
+            src: "/images/projects/project-01/cover-02.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
-          },
+          }, */
+        ],
+      },
+      {
+        title: "HTML, CSS, and JavaScript",
+        description: (
+          <>Adept in using HTML, CSS, and JavaScript</>
+        ),
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/project-01/LoginForm.png",
+            alt: "LoginForm",
+            width: 16,
+            height: 9,
+          }, 
+          {
+            src: "/images/projects/project-01/Product_landing_page.png",
+            alt: "Product landing page",
+            width: 16,
+            height: 9,
+          }, 
         ],
       },
     ],
