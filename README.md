@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website built with Next.js and Once UI.
 
-![Portfolio Preview](public/images/cover.png)
+![Portfolio Preview](public/images/cover2.png)
 
 ## **About**
 

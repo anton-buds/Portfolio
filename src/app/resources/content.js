@@ -6,7 +6,7 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "Computer Engineer | Front-End Developer",
-  avatar: "/images/avatar2.jpg",
+  avatar: "/images/Avatar2.jpg",
   location: "Asia/Manila", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Tagalog"], // optional: Leave the array empty if you don't want to display languages
 };
@@ -80,9 +80,7 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Anton is a Philippines-based Computer Engineering student and Front-End Developer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Anton is a Philippines-based Computer Engineering student and Front-End Developer with a passion for transforming ideas into modern, elegant design solutions. His work spans digital interfaces, interactive experiences, and the convergence of design and technology.
       </>
     ),
   },
@@ -207,6 +205,12 @@ const about = {
           }, 
           {
             src: "/images/projects/project-01/Product_landing_page.png",
+            alt: "Product landing page",
+            width: 16,
+            height: 9,
+          }, 
+          {
+            src: "/images/projects/project-01/Product_landing_page2.png",
             alt: "Product landing page",
             width: 16,
             height: 9,

@@ -4,7 +4,7 @@ const routes = {
   "/": true,
   "/about": true,
   "/work": true,
-  "/blog": false,
+  "/blog": true,
   "/gallery": true,
 };
 
@@ -16,11 +16,11 @@ const protectedRoutes = {
 
 const style = {
   theme: "dark", // dark | light
-  neutral: "slate", // sand | gray | slate
+  neutral: "gray", // sand | gray | slate
   brand: "cyan", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-  accent: "cyan", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+  accent: "blue", // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
   solid: "contrast", // color | contrast
-  solidStyle: "flat", // flat | plastic
+  solidStyle: "plastic", // flat | plastic
   border: "playful", // rounded | playful | conservative
   surface: "translucent", // filled | translucent
   transition: "all", // all | micro | macro
@@ -37,18 +37,18 @@ const effects = {
     display: true,
     x: 0,
     y: 0,
-    width: 100,
-    height: 100,
-    tilt: 100,
+    width: 60,
+    height: 60,
+    tilt: 0,
     colorStart: "brand-background-strong",
     colorEnd: "static-transparent",
-    opacity: 70,
+    opacity: 90,
   },
   dots: {
     display: true,
-    size: 1,
+    size: 20,
     color: "brand-on-background-medium",
-    opacity: 20,
+    opacity: 30,
   },
   lines: {
     display: true,
@@ -56,22 +56,22 @@ const effects = {
     opacity: 100,
   },
   grid: {
-    display: true,
+    display: false,
     color: "neutral-alpha-weak",
     opacity: 100,
   },
 };
 
 const display = {
-  location: true,
-  time: true,
+  location: false,
+  time: false,
 };
 
 const mailchimp = {
   action: "https://url/subscribe/post?parameters",
   effects: {
     mask: {
-      cursor: false,
+      cursor: true,
       x: 100,
       y: 0,
       radius: 100,
@@ -82,10 +82,10 @@ const mailchimp = {
       y: 50,
       width: 100,
       height: 100,
-      tilt: -45,
+      tilt: 25,
       colorStart: "accent-background-strong",
       colorEnd: "static-transparent",
-      opacity: 100,
+      opacity: 70,
     },
     dots: {
       display: false,
@@ -99,7 +99,7 @@ const mailchimp = {
       opacity: 100,
     },
     grid: {
-      display: true,
+      display: false,
       color: "neutral-alpha-weak",
       opacity: 100,
     },

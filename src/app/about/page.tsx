@@ -121,7 +121,7 @@ export default function About() {
               <Avatar src={person.avatar} size="xl"/>
             </GlitchFx>
             <Flex gap="8" vertical="center">
-              <Icon onBackground="brand-weak" name="globe" />
+              <Icon onBackground="brand-medium" name="globe" />
               {person.location}
             </Flex>
             {person.languages.length > 0 && (
@@ -151,14 +151,14 @@ export default function About() {
                 style={{
                   backdropFilter: "blur(var(--static-space-1))",
                 }}
-                background="brand-alpha-weak"
+                background="brand-weak"
                 radius="m-4"
                 padding="4"
                 gap="8"
                 marginBottom="m"
                 vertical="center"
               >
-                <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
+                <Icon paddingLeft="12" name="calendar" onBackground="brand-medium" />
                 <Flex paddingX="8">Schedule a call</Flex>
                 <IconButton
                   href={about.calendar.link}
@@ -168,18 +168,30 @@ export default function About() {
                 />
               </Flex>
             )}
-            <Heading className={styles.textAlign} variant="display-strong-xl">
+            <Heading
+              className={styles.textAlign}
+              variant="display-strong-xl"
+              onBackground="brand-medium"
+            >
               {person.name}
             </Heading>
             <Text
               className={styles.textAlign}
               variant="display-default-xs"
-              onBackground="brand-weak"
+              onBackground="accent-medium"
             >
               {person.role}
             </Text>
             {social.length > 0 && (
-              <Flex className={styles.blockAlign} paddingTop="20" paddingBottom="8" gap="8" wrap horizontal="center" fitWidth>
+              <Flex
+                className={styles.blockAlign}
+                paddingTop="20"
+                paddingBottom="8"
+                gap="8"
+                wrap
+                horizontal="center"
+                fitWidth
+              >
                 {social.map(
                   (item) =>
                     item.link && (
@@ -191,7 +203,7 @@ export default function About() {
                                 prefixIcon={item.icon}
                                 label={item.name}
                                 size="s"
-                                variant="tertiary"
+                                variant="secondary"
                             />
                             <IconButton
                                 className="s-flex-show"
@@ -209,7 +221,7 @@ export default function About() {
           </Column>
 
           {about.intro.display && (
-            <Column textVariant="body-default-l" fillWidth gap="m" marginBottom="l">
+            <Column textVariant="body-default-l" fillWidth gap="m" marginBottom="l" onBackground="neutral-strong">
               <LetterFx speed="fast" trigger="instant" charset={[
                   'x',
                   '@',
@@ -233,14 +245,14 @@ export default function About() {
 
           {about.work.display && (
             <>
-              <Heading as="h2" id={about.work.title} variant="display-strong-s" marginBottom="m">
+              <Heading as="h2" id={about.work.title} variant="display-strong-s" marginBottom="m" onBackground="brand-medium">
                 {about.work.title}
               </Heading>
               <Column fillWidth gap="l" marginBottom="40">
                 {about.work.experiences.map((experience, index) => (
                   <Column key={`${experience.company}-${experience.role}-${index}`} fillWidth>
                     <Flex fillWidth horizontal="space-between" vertical="end" marginBottom="4">
-                      <Text id={experience.company} variant="heading-strong-l">
+                      <Text id={experience.company} variant="heading-strong-l" onBackground="accent-medium">
                         {experience.company}
                       </Text>
                       <Text variant="heading-default-xs" onBackground="neutral-medium">
@@ -266,20 +278,20 @@ export default function About() {
                         {experience.images.map((image, index) => (
                           <Flex
                             key={index}
-                            border="neutral-medium"
+                            border="brand-weak"
                             radius="m"
                             //@ts-ignore
                             minWidth={image.width}
                             //@ts-ignore
                             height={image.height}
                           >
-                              <SmartImage
-                                enlarge
-                                radius="m"
-                                //@ts-ignore
-                                sizes={image.width.toString()}
-                                //@ts-ignore
-                                alt={image.alt}
+                            <SmartImage
+                              enlarge
+                              radius="m"
+                              //@ts-ignore
+                              sizes={image.width.toString()}
+                              //@ts-ignore
+                              alt={image.alt}
                                 //@ts-ignore
                                 src={image.src}
                               />
@@ -295,16 +307,16 @@ export default function About() {
 
           {about.studies.display && (
             <>
-              <Heading as="h2" id={about.studies.title} variant="display-strong-s" marginBottom="m">
+              <Heading as="h2" id={about.studies.title} variant="display-strong-s" marginBottom="m" onBackground="brand-medium">
                 {about.studies.title}
               </Heading>
               <Column fillWidth gap="l" marginBottom="40">
                 {about.studies.institutions.map((institution, index) => (
                   <Column key={`${institution.name}-${index}`} fillWidth gap="4">
-                    <Text id={institution.name} variant="heading-strong-l">
+                    <Text id={institution.name} variant="heading-strong-l" onBackground="accent-medium">
                       {institution.name}
                     </Text>
-                    <Text variant="heading-default-xs" onBackground="brand-weak">
+                    <Text variant="heading-default-xs" onBackground="accent-medium">
                       {institution.description}
                     </Text>
                   </Column>
@@ -327,7 +339,7 @@ export default function About() {
                 {about.technical.skills.map((skill, index) => (
                   <Column key={`${skill}-${index}`} fillWidth gap="4">
                     <Text variant="heading-strong-l">{skill.title}</Text>
-                    <Text variant="body-default-m" onBackground="brand-weak">
+                    <Text variant="body-default-m" onBackground="accent-medium">
                       {skill.description}
                     </Text>
                     {skill.images && skill.images.length > 0 && (
