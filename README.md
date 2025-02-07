@@ -1,9 +1,41 @@
-# **Build your portfolio with Once UI's Magic Portfolio**
+# **Anton Buduan's Portfolio**
 
-View the [demo here](https://demo.magic-portfolio.com).
+A modern, responsive portfolio website built with Next.js and Once UI.
 
-![Magic Portfolio](public/images/cover.png)
+![Portfolio Preview](public/images/cover.png)
 
+## **About**
+
+This portfolio showcases my work as a Computer Engineer and Front-End Developer. It features:
+- Modern, responsive design
+- Interactive UI elements
+- Project showcases
+- Work experience
+- Technical skills
+
+## **Tech Stack**
+
+Built with:
+- [Next.js](https://nextjs.org)
+- [Once UI](https://once-ui.com)
+- React
+- TypeScript
+
+## **Features**
+
+- Responsive design
+- Dark/Light mode
+- Interactive animations
+- Project gallery
+- Work experience timeline
+- Contact information
+
+## **Contact**
+
+Feel free to reach out:
+- Email: antonbuds7@outlook.com
+- GitHub: [anton-buds](https://github.com/anton-buds)
+- LinkedIn: [Anton Buduan](https://www.linkedin.com/in/anton-buduan/)
 
 # **Getting started**
 
