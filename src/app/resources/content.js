@@ -12,7 +12,7 @@ const person = {
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Start building your website today!</>,
   description: (
     <>
@@ -150,7 +150,10 @@ const about = {
       {
         name: "Don Bosco Academy | High School",
         description: <>STEM strand</>,
-        image: "/images/dba.jpg", // Add your high school image here
+      },
+      {
+        name: "FreeCodeCamp ",
+        description: <>Responsive Web Design</>,
       },
     ],
   },
@@ -159,7 +162,7 @@ const about = {
     title: "Technical Skills",
     skills: [
       {
-        title: "Web Builder",
+        title: "Web Builder/Developer",
         description: (
           <>Able to build website using website builders such as Hostinger Website Builder and WordPress</>
         ),
@@ -198,22 +201,28 @@ const about = {
         // optional: leave the array empty if you don't want to display images
         images: [
           {
+            src: "/images/FCC-Cert.png",
+            alt: "FCC Responsive Web Design Certificate",
+            width: 18,
+            height: 12,
+          }, 
+          {
             src: "/images/projects/project-01/LoginForm.png",
             alt: "LoginForm",
-            width: 16,
-            height: 9,
+            width: 18,
+            height: 12,
           }, 
           {
             src: "/images/projects/project-01/Product_landing_page.png",
             alt: "Product landing page",
-            width: 16,
-            height: 9,
+            width: 18,
+            height: 12,
           }, 
           {
             src: "/images/projects/project-01/Product_landing_page2.png",
             alt: "Product landing page",
-            width: 16,
-            height: 9,
+            width: 18,
+            height: 12,
           }, 
         ],
       },
@@ -249,7 +258,7 @@ const gallery = {
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-02.jpg",
+      src: "/images/Hobby/fightclub-1.jpg",
       alt: "image",
       orientation: "horizontal",
     },
@@ -259,57 +268,32 @@ const gallery = {
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-04.jpg",
+      src: "/images/Hobby/photography3.jpg",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-05.jpg",
+      src: "/images/Hobby/fightclub-group.jpg",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-06.jpg",
+      src: "/images/Hobby/photography4.jpg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-07.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-08.jpg",
+      src: "/images/Hobby/avatar-chinatown.jpg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-09.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-10.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-11.jpg",
+      src: "/images/Hobby/photography1.jpg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-12.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-13.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-14.jpg",
+      src: "/images/avatar_golf.jpg",
       alt: "image",
       orientation: "horizontal",
     },
