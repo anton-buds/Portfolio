@@ -1,3 +1,5 @@
+/** MAGIC PORTFOLIO - Test Update */
+
 import React from "react";
 
 import { Heading, Flex, Text, Button, Avatar, RevealFx, Arrow, Column } from "@/once-ui/components";
