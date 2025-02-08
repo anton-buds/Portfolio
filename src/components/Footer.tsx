@@ -28,7 +28,7 @@ export const Footer = () => {
           <Text paddingX="4">{person.name}</Text>
           <Text onBackground="neutral-weak">
             {/* Usage of this template requires attribution. Please don't remove the link to Once UI. */}
-            / Build your portfolio with{" "}
+            / Built with{" "}
             <SmartLink
               style={{ marginLeft: "-0.125rem" }}
               href="https://once-ui.com/templates/magic-portfolio"
@@ -53,7 +53,7 @@ export const Footer = () => {
           )}
         </Flex>
       </Flex>
-      <Flex height="80" show="s"></Flex>
+      <Flex height="80" show="l"></Flex>
     </Flex>
   );
 };
