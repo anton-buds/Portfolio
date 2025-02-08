@@ -103,7 +103,7 @@ export default function About() {
           gap="32"
           hide="s"
         >
-          <TableOfContents structure={structure} about={about} />
+          <TableOfContents structure={structure} about={about}/>
         </Column>
       )}
       <Flex fillWidth mobileDirection="column" horizontal="center">
@@ -171,14 +171,14 @@ export default function About() {
               <Heading
                 className={styles.textAlign}
                 variant="display-strong-xl"
-              onBackground="brand-medium"
+              onBackground="accent-weak"
             >
               {person.name}
             </Heading>
             <Text
               className={styles.textAlign}
               variant="display-default-xs"
-              onBackground="accent-medium"
+              onBackground="brand-medium"
             >
               {person.role}
             </Text>
@@ -203,7 +203,7 @@ export default function About() {
                                 prefixIcon={item.icon}
                                 label={item.name}
                                 size="s"
-                                variant="secondary"
+                                variant="tertiary"
                             />
                             <IconButton
                                 className="s-flex-show"
@@ -221,33 +221,34 @@ export default function About() {
           </Column>
 
           {about.intro.display && (
-            <Column textVariant="body-default-l" fillWidth gap="m" marginBottom="l" onBackground="neutral-strong">
+            <Column textVariant="body-default-l" fillWidth gap="m" marginBottom="l" onBackground="neutral-medium">
               {about.intro.description}
             </Column>
           )}
 
           {about.work.display && (
             <>
-              <Heading as="h2" id={about.work.title} variant="display-strong-s" marginBottom="m" onBackground="brand-medium">
+              <Heading as="h2" id={about.work.title} variant="display-strong-s" marginBottom="m" onBackground="brand-weak">
                 {about.work.title}
               </Heading>
               <Column fillWidth gap="l" marginBottom="40">
                 {about.work.experiences.map((experience, index) => (
                   <Column key={`${experience.company}-${experience.role}-${index}`} fillWidth>
-                    <Flex fillWidth horizontal="space-between" vertical="end" marginBottom="4">
-                      <Text id={experience.company} variant="heading-strong-l" onBackground="accent-medium">
+                    <Flex fillWidth horizontal="space-between" vertical="start" marginBottom="4">
+                      <Text id={experience.company} variant="heading-default-l" onBackground="accent-medium">
                         {experience.company}
                       </Text>
-                      <Text variant="heading-default-xs" onBackground="neutral-medium">
+                      <Text variant="heading-default-xs" onBackground="accent-medium">
                         {experience.timeframe}
                       </Text>
                     </Flex>
-                    <Text variant="body-default-s" onBackground="brand-weak" marginBottom="m">
+                    <Text variant="body-default-s" onBackground="brand-medium" marginBottom="m">
                       {experience.role}
                     </Text>
-                    <Column as="ul" gap="8">
+                    <Column as="ul" gap="4">
                       {experience.achievements.map((achievement: JSX.Element, index: number) => (
                         <Text
+                        onBackground="neutral-medium"
                           as="li"
                           variant="body-default-m"
                           key={`${experience.company}-${index}`}
@@ -257,7 +258,7 @@ export default function About() {
                       ))}
                     </Column>
                     {experience.images.length > 0 && (
-                      <Flex fillWidth paddingTop="m" paddingLeft="40" wrap>
+                      <Flex fillWidth paddingTop="m" paddingLeft="20" wrap>
                         {experience.images.map((image, index) => (
                           <Flex
                             key={index}
@@ -290,7 +291,7 @@ export default function About() {
 
           {about.studies.display && (
             <>
-              <Heading as="h2" id={about.studies.title} variant="display-strong-s" marginBottom="m" onBackground="brand-medium">
+              <Heading as="h2" id={about.studies.title} variant="display-strong-s" marginBottom="m" onBackground="brand-weak">
                 {about.studies.title}
               </Heading>
               <Column fillWidth gap="l" marginBottom="40">
@@ -299,7 +300,7 @@ export default function About() {
                     <Text id={institution.name} variant="heading-strong-l" onBackground="accent-medium">
                       {institution.name}
                     </Text>
-                    <Text variant="heading-default-xs" onBackground="accent-medium">
+                    <Text variant="heading-default-xs" onBackground="neutral-medium">
                       {institution.description}
                     </Text>
                   </Column>
@@ -315,14 +316,15 @@ export default function About() {
                 id={about.technical.title}
                 variant="display-strong-s"
                 marginBottom="40"
+                onBackground="brand-weak"
               >
                 {about.technical.title}
               </Heading>
               <Column fillWidth gap="l">
                 {about.technical.skills.map((skill, index) => (
                   <Column key={`${skill}-${index}`} fillWidth gap="4">
-                    <Text variant="heading-strong-l">{skill.title}</Text>
-                    <Text variant="body-default-m" onBackground="accent-medium">
+                    <Text variant="heading-strong-l" onBackground="accent-medium">{skill.title}</Text>
+                    <Text variant="body-default-m" onBackground="neutral-medium">
                       {skill.description}
                     </Text>
                     {skill.images && skill.images.length > 0 && (
