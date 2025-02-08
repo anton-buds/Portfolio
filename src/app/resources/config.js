@@ -1,4 +1,4 @@
-const baseURL = "buildwiwthbuds.vercel.app";
+const baseURL = "buildwithbuds.vercel.app";
 
 const routes = {
   "/": true,
