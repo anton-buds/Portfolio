@@ -146,20 +146,20 @@ export default function About() {
             {about.calendar.display && (
               <Flex
                 fitWidth
-                border="brand-alpha-strong"
+                border="accent-alpha-strong"
                 className={styles.blockAlign}
                 style={{
                   backdropFilter: "blur(var(--static-space-1))",
                 }}
-                background="brand-weak"
-                radius="m-4"
+                background="accent-alpha-weak"
+                radius="l-4"
                 padding="4"
                 gap="8"
                 marginBottom="m"
                 vertical="center"
               >
-                <Icon paddingLeft="12" name="calendar" onBackground="brand-medium" />
-                <Flex paddingX="8">Schedule a call</Flex>
+                <Icon paddingLeft="12" name="calendar" onBackground="accent-medium" />
+                <Flex paddingX="8" onBackground="neutral-strong">Schedule a call</Flex>
                 <IconButton
                   href={about.calendar.link}
                   data-border="rounded"
@@ -171,14 +171,14 @@ export default function About() {
               <Heading
                 className={styles.textAlign}
                 variant="display-strong-xl"
-              onBackground="accent-weak"
+              onBackground="accent-medium"
             >
               {person.name}
             </Heading>
             <Text
               className={styles.textAlign}
               variant="display-default-xs"
-              onBackground="brand-medium"
+              onBackground="neutral-weak"
             >
               {person.role}
             </Text>
@@ -203,15 +203,15 @@ export default function About() {
                                 prefixIcon={item.icon}
                                 label={item.name}
                                 size="s"
-                                variant="tertiary"
+                                variant="secondary"
                             />
                             <IconButton
                                 className="s-flex-show"
-                                size="l"
+                                size="s"
                                 key={`${item.name}-icon`}
                                 href={item.link}
                                 icon={item.icon}
-                                variant="secondary"
+                                variant="tertiary"
                             />
                         </>
                     ),  
@@ -221,34 +221,34 @@ export default function About() {
           </Column>
 
           {about.intro.display && (
-            <Column textVariant="body-default-l" fillWidth gap="m" marginBottom="l" onBackground="neutral-medium">
+            <Column textVariant="body-default-l" fillWidth gap="m" marginBottom="l" onBackground="neutral-strong">
               {about.intro.description}
             </Column>
           )}
 
           {about.work.display && (
             <>
-              <Heading as="h2" id={about.work.title} variant="display-strong-s" marginBottom="m" onBackground="brand-weak">
+              <Heading as="h2" id={about.work.title} variant="display-strong-s" marginBottom="m" onBackground="accent-medium">
                 {about.work.title}
               </Heading>
               <Column fillWidth gap="l" marginBottom="40">
                 {about.work.experiences.map((experience, index) => (
                   <Column key={`${experience.company}-${experience.role}-${index}`} fillWidth>
                     <Flex fillWidth horizontal="space-between" vertical="start" marginBottom="4">
-                      <Text id={experience.company} variant="heading-default-l" onBackground="accent-medium">
+                      <Text id={experience.company} variant="heading-default-l" onBackground="neutral-strong">
                         {experience.company}
                       </Text>
-                      <Text variant="heading-default-xs" onBackground="accent-medium">
+                      <Text variant="heading-default-xs" onBackground="neutral-weak">
                         {experience.timeframe}
                       </Text>
                     </Flex>
-                    <Text variant="body-default-s" onBackground="brand-medium" marginBottom="m">
+                    <Text variant="body-default-s" onBackground="accent-medium" marginBottom="m">
                       {experience.role}
                     </Text>
                     <Column as="ul" gap="4">
                       {experience.achievements.map((achievement: JSX.Element, index: number) => (
                         <Text
-                        onBackground="neutral-medium"
+                        onBackground="neutral-strong"
                           as="li"
                           variant="body-default-m"
                           key={`${experience.company}-${index}`}
@@ -262,7 +262,7 @@ export default function About() {
                         {experience.images.map((image, index) => (
                           <Flex
                             key={index}
-                            border="brand-weak"
+                            border="neutral-weak"
                             radius="m"
                             //@ts-ignore
                             minWidth={image.width}
@@ -270,7 +270,6 @@ export default function About() {
                             height={image.height}
                           >
                             <SmartImage
-                              enlarge
                               radius="m"
                               //@ts-ignore
                               sizes={image.width.toString()}
@@ -291,16 +290,16 @@ export default function About() {
 
           {about.studies.display && (
             <>
-              <Heading as="h2" id={about.studies.title} variant="display-strong-s" marginBottom="m" onBackground="brand-weak">
+              <Heading as="h2" id={about.studies.title} variant="display-strong-s" marginBottom="m" onBackground="accent-medium">
                 {about.studies.title}
               </Heading>
-              <Column fillWidth gap="l" marginBottom="40">
+              <Column fillWidth gap="m" marginBottom="40">
                 {about.studies.institutions.map((institution, index) => (
                   <Column key={`${institution.name}-${index}`} fillWidth gap="4">
-                    <Text id={institution.name} variant="heading-strong-l" onBackground="accent-medium">
+                    <Text id={institution.name} variant="heading-strong-l" onBackground="neutral-strong">
                       {institution.name}
                     </Text>
-                    <Text variant="heading-default-xs" onBackground="neutral-medium">
+                    <Text variant="heading-default-xs" onBackground="neutral-weak">
                       {institution.description}
                     </Text>
                   </Column>
@@ -315,15 +314,15 @@ export default function About() {
                 as="h2"
                 id={about.technical.title}
                 variant="display-strong-s"
-                marginBottom="40"
-                onBackground="brand-weak"
+                marginBottom="20"
+                onBackground="accent-medium"
               >
                 {about.technical.title}
               </Heading>
-              <Column fillWidth gap="l">
+              <Column fillWidth gap="m">
                 {about.technical.skills.map((skill, index) => (
                   <Column key={`${skill}-${index}`} fillWidth gap="4">
-                    <Text variant="heading-strong-l" onBackground="accent-medium">{skill.title}</Text>
+                    <Text variant="heading-strong-l" onBackground="neutral-strong">{skill.title}</Text>
                     <Text variant="body-default-m" onBackground="neutral-medium">
                       {skill.description}
                     </Text>
@@ -332,7 +331,7 @@ export default function About() {
                         {skill.images.map((image, index) => (
                           <Flex
                             key={index}
-                            border="neutral-medium"
+                            border="accent-medium"
                             radius="m"
                             //@ts-ignore
                             minWidth={image.width}

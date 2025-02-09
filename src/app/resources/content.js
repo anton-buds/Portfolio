@@ -111,12 +111,12 @@ const about = {
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
+         /*  {
             src: "/images/projects/project-01/AYMAGICALLINE.png",
             alt: "AYMAGICAL LINE Project",
             width: 16,
             height: 9,
-          },
+          }, */
         ],
       },
       /* IF YOU WANT TO ADD MORE, JUST COPY THE TEMPLATE BELOW AND CHANGE THE DETAILS:
@@ -162,9 +162,30 @@ const about = {
     title: "Technical Skills",
     skills: [
       {
+        title: "Software Engineer",
+        description: (
+          <>Developed and optimized an automated trash segregation system using C/C++ and embedded systems to enhance accuracy, efficiency, and scalability.</>,
+        ),
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/Work/image-4.jpg",
+            alt: "Project image",
+            width: 18,
+            height: 12,
+          }, 
+          {
+            src: "/images/Work/image-6.jpg",
+            alt: "Project image",
+            width: 18,
+            height: 12,
+          }, 
+        ],
+      },  
+      {
         title: "Web Builder/Developer",
         description: (
-          <>Able to build website using website builders such as Hostinger Website Builder and WordPress</>
+          <>Proficient in building website using website builders such as Hostinger Website Builder and WordPress</>
         ),
         // optional: leave the array empty if you don't want to display images
         images: [
@@ -178,9 +199,9 @@ const about = {
         ],
       },  
       {
-        title: "CSS Frameworks",
+        title: "Frameworks",
         description: (
-          <>Adept in using CSS and JS frameworks such as Bootstrap,TailwindCSS, React, and Next.js</>
+          <>Adept in using CSS and JavaScript frameworks such as Bootstrap,TailwindCSS, React, and Next.js</>
         ),
         // optional: leave the array empty if you don't want to display images
         images: [
@@ -196,7 +217,7 @@ const about = {
       {
         title: "HTML, CSS, and JavaScript",
         description: (
-          <>Adept in using HTML, CSS, and JavaScript</>
+          <>Proficient in developing web applications with HTML, CSS, and JavaScript</>
         ),
         // optional: leave the array empty if you don't want to display images
         images: [

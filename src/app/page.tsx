@@ -64,15 +64,15 @@ export default function Home() {
           }),
         }}
       />
-      <Column fillWidth paddingY="l" gap="m">
+      <Column fillWidth paddingY="m" gap="m">
         <Column maxWidth="s">
           <RevealFx translateY="4" fillWidth horizontal="start" paddingBottom="m">
-            <Heading wrap="balance" variant="display-strong-l" onBackground="accent-weak">
+            <Heading wrap="balance" variant="display-strong-l" onBackground="accent-medium">
               {home.headline}
             </Heading>
           </RevealFx>
           <RevealFx translateY="8" delay={0.2} fillWidth horizontal="start" paddingBottom="m">
-            <Text wrap="balance" onBackground="neutral-weak" variant="heading-default-xl">
+            <Text wrap="balance" onBackground="neutral-medium" variant="heading-default-xl">
               {home.subline}
             </Text>
           </RevealFx>
@@ -82,13 +82,13 @@ export default function Home() {
               data-border="rounded"
               href="/about"
               variant="secondary"
-              size="l"
+              size="m"
               arrowIcon
             >
-              <Flex gap="8" vertical="center">
+              <Flex gap="16" vertical="center">
                 {about.avatar.display && (
                   <Avatar
-                    style={{ marginLeft: "-0.75rem", marginRight: "0.25rem" }}
+                    style={{ marginLeft: "-0.75rem", marginRight: "0.1em" }}
                     src={person.avatar}
                     size="m"
                   />
