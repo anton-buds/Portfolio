@@ -116,6 +116,31 @@ export default function Home() {
       )}
       <Projects range={[2]} />
       {newsletter.display && <Mailchimp newsletter={newsletter} />}
+      {/* Contact Section */}
+      <Column fillWidth paddingY="m" gap="m">
+        <RevealFx translateY="4" fillWidth horizontal="center" paddingBottom="m">
+          <Heading wrap="balance" variant="display-strong-l" onBackground="accent-medium">
+            Get in Touch
+          </Heading>
+        </RevealFx>
+        <RevealFx translateY="8" delay={0.2} fillWidth horizontal="center" paddingBottom="m">
+          <Text wrap="balance" onBackground="neutral-medium" variant="heading-default-xl">
+            Let's connect and discuss your next project
+          </Text>
+        </RevealFx>
+        <RevealFx translateY="12" delay={0.4} fillWidth horizontal="center">
+          <Flex gap="m" wrap>
+            <Button
+              href="mailto:antonbuds7@outlook.com"
+              variant="secondary"
+              size="m"
+              arrowIcon
+            >
+              Email Me
+            </Button>
+          </Flex>
+        </RevealFx>
+      </Column>
     </Column>
   );
 }
