@@ -164,7 +164,7 @@ const about = {
       {
         title: "Software Engineer",
         description: (
-          <>Developed and optimized an automated trash segregation system using C/C++ and embedded systems to enhance accuracy, efficiency, and scalability.</>,
+          <>Developed and optimized an automated trash segregation system using C/C++ and embedded systems to enhance accuracy, efficiency, and scalability.</>
         ),
         // optional: leave the array empty if you don't want to display images
         images: [
