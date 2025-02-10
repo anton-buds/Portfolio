@@ -1,5 +1,5 @@
 /** MAGIC PORTFOLIO - Test Update */
-
+import { Analytics } from "@vercel/analytics/react"
 import React from "react";
 
 import { Heading, Flex, Text, Button, Avatar, RevealFx, Arrow, Column } from "@/once-ui/components";
@@ -42,6 +42,7 @@ export async function generateMetadata() {
 export default function Home() {
   return (
     <Column maxWidth="m" gap="xl" horizontal="center">
+      <Analytics />
       <script
         type="application/ld+json"
         suppressHydrationWarning
