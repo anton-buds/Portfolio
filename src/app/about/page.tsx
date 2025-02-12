@@ -96,11 +96,11 @@ export default function About() {
       />
       {about.tableOfContent.display && (
         <Column
-          left="80"
-          style={{ top: "50%", transform: "translateY(-50%)" }}
+          left="20"
+          style={{ top: "65%", transform: "translateY(-50%)" }}
           position="fixed"
           paddingLeft="48"
-          gap="32"
+          gap="8"
           hide="s"
         >
           <TableOfContents structure={structure} about={about}/>

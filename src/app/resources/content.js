@@ -5,7 +5,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Computer Engineer | Front-End Developer",
+  role: "Front-End Developer | Graphic Designer",
   avatar: "/images/Avatar2.jpg",
   location: "Asia/Manila", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Tagalog"], // optional: Leave the array empty if you don't want to display languages
@@ -269,7 +269,7 @@ const work = {
 
 const gallery = {
   label: "Gallery",
-  title: "My photo gallery",
+  title: "Hobbies and Interests",
   description: `A photo collection by ${person.name}`,
   
   images: [
