@@ -20,22 +20,6 @@ Built with:
 - React
 - TypeScript
 
-## **Features**
-
-- Responsive design
-- Dark/Light mode
-- Interactive animations
-- Project gallery
-- Work experience timeline
-- Contact information
-
-## **Contact**
-
-Feel free to reach out:
-- Email: antonbuds7@outlook.com
-- GitHub: [anton-buds](https://github.com/anton-buds)
-- LinkedIn: [Anton Buduan](https://www.linkedin.com/in/anton-buduan/)
-
 # **What I used to make this Portfolio**
 
 I used [Magic Portfolio](https://github.com/once-ui-system/magic-portfolio) that was built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org) by Lorant One and its contributors. It requires Node.js v18.17+.
