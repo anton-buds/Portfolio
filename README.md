@@ -2,44 +2,66 @@
 
 View the [demo here](https://demo.magic-portfolio.com).
 
-![Portfolio Preview](public/images/Cover2.png)
+![Magic Portfolio](public/images/cover.png)
 
-## **About**
 
-This portfolio showcases my work as a Front-End Developer. It features:
-- Modern, responsive design
-- Interactive UI elements
-- Project showcases
-- Work experience
-- Technical skills
+# **Getting started**
 
-## **Tech Stack**
+Magic Portfolio was built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org). It requires Node.js v18.17+.
 
-Built with:
-- [Next.js](https://nextjs.org)
-- [Once UI](https://once-ui.com)
-- React
-- TypeScript
+**1. Clone the repository**
+```
+git clone https://github.com/once-ui-system/magic-portfolio.git
+```
 
-## **Features**
+**2. Install dependencies**
+```
+npm install
+```
 
-- Responsive design
-- Dark/Light mode
-- Interactive animations
-- Project gallery
-- Work experience timeline
-- Contact information
+**3. Run dev server**
+```
+npm run dev
+```
 
-## **Contact**
+**4. Edit config**
+```
+src/app/resources/config
+```
 
-Feel free to reach out:
-- Email: antonbuds7@outlook.com
-- GitHub: [anton-buds](https://github.com/anton-buds)
-- LinkedIn: [Anton Buduan](https://www.linkedin.com/in/anton-buduan/)
+**5. Edit content**
+```
+src/app/resources/content
+```
 
-# **What I used to make this Portfolio**
+**6. Create blog posts / projects**
+```
+Add a new .mdx file to src/app/blog/posts or src/app/work/projects
+```
 
-I used [Magic Portfolio](https://github.com/once-ui-system/magic-portfolio) that was built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org) by Lorant One and its contributors. It requires Node.js v18.17+.
+# **Features**
+
+## **Once UI**
+- All tokens, components & features of [Once UI](https://once-ui.com)
+
+## **SEO**
+- Automatic open-graph and X image generation with next/og
+- Automatic schema and metadata generation based on the content file
+
+## **Design**
+- Responsive layout optimized for all screen sizes
+- Timeless design without heavy animations and motion
+- Endless customization options through [data attributes](https://once-ui.com/docs/theming)
+
+## **Content**
+- Render sections conditionally based on the content file
+- Enable or disable pages for blog, work, gallery and about / CV
+- Generate and display social links automatically
+- Set up password protection for URLs
+
+## **Localization**
+- A localized version of Magic Portfolio is available with the next-intl library
+- To use localization, switch to the 'i18n' branch
 
 # **Authors**
 
