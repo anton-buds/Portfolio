@@ -17,6 +17,7 @@ import { baseURL } from "@/app/resources";
 import TableOfContents from "@/components/about/TableOfContents";
 import styles from "@/components/about/about.module.scss";
 import { person, about, social } from "@/app/resources/content";
+import GradientText from "@/components/gradientText";
 
 export async function generateMetadata() {
   const title = about.title;
@@ -173,12 +174,18 @@ export default function About() {
                 variant="display-strong-xl"
               onBackground="accent-medium"
             >
+              <GradientText
+              colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+              animationSpeed={3}
+              showBorder={false}
+              >
               {person.name}
+              </GradientText>
             </Heading>
             <Text
               className={styles.textAlign}
               variant="display-default-xs"
-              onBackground="neutral-weak"
+              onBackground="accent-medium"
             >
               {person.role}
             </Text>

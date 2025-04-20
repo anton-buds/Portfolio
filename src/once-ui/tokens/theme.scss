@@ -1,7 +1,7 @@
 :root {
     /* FONT FAMILY */
     --font-family-body:     var(--font-primary);
-    --font-family-heading:  var(--font-secondary);
+    --font-family-heading:  var(--font-heading);
     --font-family-label:    var(--font-tertiary);
     --font-family-code:     var(--font-code);
 
@@ -60,7 +60,7 @@
     --brand-border-strong:          var(--function-brand-400);
     --brand-border-medium:          var(--function-brand-300);
     --brand-border-weak:            var(--function-brand-200);
-  
+
     --brand-alpha-strong:           var(--function-brand-600-50);
     --brand-alpha-medium:           var(--function-brand-600-30);
     --brand-alpha-weak:             var(--function-brand-600-10);
@@ -73,18 +73,18 @@
     --accent-on-background-strong:  var(--static-white);
     --accent-on-background-medium:  var(--function-accent-900);
     --accent-on-background-weak:    var(--function-accent-600);
-  
+
     --accent-solid-strong:          var(--function-accent-500);
     --accent-solid-medium:          var(--function-accent-400);
     --accent-solid-weak:            var(--function-accent-300);
-  
-    --accent-on-solid-strong:       var(--static-white);      
+
+    --accent-on-solid-strong:       var(--static-white);
     --accent-on-solid-weak:         var(--function-accent-900);
 
     --accent-border-strong:         var(--function-accent-400);
     --accent-border-medium:         var(--function-accent-300);
     --accent-border-weak:           var(--function-accent-200);
-  
+
     --accent-alpha-strong:          var(--function-accent-600-50);
     --accent-alpha-medium:          var(--function-accent-600-30);
     --accent-alpha-weak:            var(--function-accent-600-10);
@@ -97,18 +97,18 @@
     --neutral-on-background-strong: var(--static-white);
     --neutral-on-background-medium: var(--function-neutral-900);
     --neutral-on-background-weak:   var(--function-neutral-600);
-  
+
     --neutral-solid-strong:         var(--function-neutral-500);
     --neutral-solid-medium:         var(--function-neutral-400);
     --neutral-solid-weak:           var(--function-neutral-300);
-  
-    --neutral-on-solid-strong:      var(--static-white);      
+
+    --neutral-on-solid-strong:      var(--static-white);
     --neutral-on-solid-weak:        var(--function-neutral-900);
 
     --neutral-border-strong:        var(--function-neutral-400);
     --neutral-border-medium:        var(--function-neutral-300);
     --neutral-border-weak:          var(--function-neutral-200);
-  
+
     --neutral-alpha-strong:         var(--function-neutral-600-50);
     --neutral-alpha-medium:         var(--function-neutral-600-30);
     --neutral-alpha-weak:           var(--function-neutral-600-10);
@@ -121,18 +121,18 @@
     --info-on-background-strong:    var(--static-white);
     --info-on-background-medium:    var(--function-info-900);
     --info-on-background-weak:      var(--function-info-600);
-  
+
     --info-solid-strong:            var(--function-info-500);
     --info-solid-medium:            var(--function-info-400);
     --info-solid-weak:              var(--function-info-300);
-  
-    --info-on-solid-strong:         var(--static-white);      
+
+    --info-on-solid-strong:         var(--static-white);
     --info-on-solid-weak:           var(--function-info-900);
 
     --info-border-strong:           var(--function-info-400);
     --info-border-medium:           var(--function-info-300);
     --info-border-weak:             var(--function-info-200);
-  
+
     --info-alpha-strong:            var(--function-info-600-50);
     --info-alpha-medium:            var(--function-info-600-30);
     --info-alpha-weak:              var(--function-info-600-10);
@@ -145,18 +145,18 @@
     --warning-on-background-strong: var(--static-white);
     --warning-on-background-medium: var(--function-warning-900);
     --warning-on-background-weak:   var(--function-warning-600);
-  
+
     --warning-solid-strong:         var(--function-warning-500);
     --warning-solid-medium:         var(--function-warning-400);
     --warning-solid-weak:           var(--function-warning-300);
-  
-    --warning-on-solid-strong:      var(--static-white);      
+
+    --warning-on-solid-strong:      var(--static-white);
     --warning-on-solid-weak:        var(--function-warning-900);
 
     --warning-border-strong:        var(--function-warning-400);
     --warning-border-medium:        var(--function-warning-300);
     --warning-border-weak:          var(--function-warning-200);
-  
+
     --warning-alpha-strong:         var(--function-warning-600-50);
     --warning-alpha-medium:         var(--function-warning-600-30);
     --warning-alpha-weak:           var(--function-warning-600-10);
@@ -169,23 +169,23 @@
     --danger-on-background-strong:  var(--static-white);
     --danger-on-background-medium:  var(--function-danger-900);
     --danger-on-background-weak:    var(--function-danger-600);
-  
+
     --danger-solid-strong:          var(--function-danger-500);
     --danger-solid-medium:          var(--function-danger-400);
     --danger-solid-weak:            var(--function-danger-300);
-  
-    --danger-on-solid-strong:       var(--static-white);      
+
+    --danger-on-solid-strong:       var(--static-white);
     --danger-on-solid-weak:         var(--function-danger-900);
 
     --danger-border-strong:         var(--function-danger-400);
     --danger-border-medium:         var(--function-danger-300);
     --danger-border-weak:           var(--function-danger-200);
-  
+
     --danger-alpha-strong:          var(--function-danger-600-50);
     --danger-alpha-medium:          var(--function-danger-600-30);
     --danger-alpha-weak:            var(--function-danger-600-10);
 
-    /* success */ 
+    /* success */
     --success-background-strong:    var(--function-success-300);
     --success-background-medium:    var(--function-success-200);
     --success-background-weak:      var(--function-success-100);
@@ -193,18 +193,18 @@
     --success-on-background-strong: var(--static-white);
     --success-on-background-medium: var(--function-success-900);
     --success-on-background-weak:   var(--function-success-600);
-  
+
     --success-solid-strong:         var(--function-success-500);
     --success-solid-medium:         var(--function-success-400);
     --success-solid-weak:           var(--function-success-300);
-  
-    --success-on-solid-strong:      var(--static-white);      
+
+    --success-on-solid-strong:      var(--static-white);
     --success-on-solid-weak:        var(--function-success-900);
 
     --success-border-strong:        var(--function-success-400);
     --success-border-medium:        var(--function-success-300);
     --success-border-weak:          var(--function-success-200);
-  
+
     --success-alpha-strong:         var(--function-success-600-50);
     --success-alpha-medium:         var(--function-success-600-30);
     --success-alpha-weak:           var(--function-success-600-10);
@@ -229,8 +229,8 @@
     --code-blue:                    var(--scheme-blue-600);
     --code-violet:                  var(--scheme-violet-600);
     --code-orange:                  var(--scheme-orange-600);
-    
-    /* brand */  
+
+    /* brand */
     --brand-background-strong:      var(--function-brand-800);
     --brand-background-medium:      var(--function-brand-1000);
     --brand-background-weak:        var(--static-white);
@@ -242,11 +242,11 @@
     --brand-border-strong:          var(--function-brand-800);
     --brand-border-medium:          var(--function-brand-900);
     --brand-border-weak:            var(--function-brand-1000);
-  
+
     --brand-alpha-strong:           var(--function-brand-600-50);
     --brand-alpha-medium:           var(--function-brand-600-30);
     --brand-alpha-weak:             var(--function-brand-600-10);
-    
+
     /* accent */
     --accent-background-strong:     var(--function-accent-800);
     --accent-background-medium:     var(--function-accent-1000);
@@ -255,18 +255,18 @@
     --accent-on-background-strong:  var(--function-accent-100);
     --accent-on-background-medium:  var(--function-accent-400);
     --accent-on-background-weak:    var(--function-accent-600);
-  
+
     --accent-solid-strong:          var(--function-accent-600);
     --accent-solid-medium:          var(--function-accent-500);
     --accent-solid-weak:            var(--function-accent-400);
-  
-    --accent-on-solid-strong:       var(--static-white);      
+
+    --accent-on-solid-strong:       var(--static-white);
     --accent-on-solid-weak:         var(--function-accent-1000);
 
     --accent-border-strong:         var(--function-accent-800);
     --accent-border-medium:         var(--function-accent-900);
     --accent-border-weak:           var(--function-accent-1000);
-  
+
     --accent-alpha-strong:          var(--function-accent-600-50);
     --accent-alpha-medium:          var(--function-accent-600-30);
     --accent-alpha-weak:            var(--function-accent-600-10);
@@ -279,18 +279,18 @@
     --neutral-on-background-strong: var(--function-neutral-100);
     --neutral-on-background-medium: var(--function-neutral-400);
     --neutral-on-background-weak:   var(--function-neutral-600);
-  
+
     --neutral-solid-strong:         var(--function-neutral-600);
     --neutral-solid-medium:         var(--function-neutral-500);
     --neutral-solid-weak:           var(--function-neutral-400);
-  
-    --neutral-on-solid-strong:      var(--static-white);      
+
+    --neutral-on-solid-strong:      var(--static-white);
     --neutral-on-solid-weak:        var(--function-neutral-1000);
 
     --neutral-border-strong:        var(--function-neutral-800);
     --neutral-border-medium:        var(--function-neutral-900);
     --neutral-border-weak:          var(--function-neutral-1000);
-  
+
     --neutral-alpha-strong:         var(--function-neutral-600-50);
     --neutral-alpha-medium:         var(--function-neutral-600-30);
     --neutral-alpha-weak:           var(--function-neutral-600-10);
@@ -303,18 +303,18 @@
     --info-on-background-strong:    var(--function-info-100);
     --info-on-background-medium:    var(--function-info-400);
     --info-on-background-weak:      var(--function-info-600);
-  
+
     --info-solid-strong:            var(--function-info-600);
     --info-solid-medium:            var(--function-info-500);
     --info-solid-weak:              var(--function-info-400);
-  
-    --info-on-solid-strong:         var(--static-white);      
+
+    --info-on-solid-strong:         var(--static-white);
     --info-on-solid-weak:           var(--function-info-1000);
 
     --info-border-strong:           var(--function-info-800);
     --info-border-medium:           var(--function-info-900);
     --info-border-weak:             var(--function-info-1000);
-  
+
     --info-alpha-strong:            var(--function-info-600-50);
     --info-alpha-medium:            var(--function-info-600-30);
     --info-alpha-weak:              var(--function-info-600-10);
@@ -327,23 +327,23 @@
     --warning-on-background-strong: var(--function-warning-100);
     --warning-on-background-medium: var(--function-warning-400);
     --warning-on-background-weak:   var(--function-warning-600);
-  
+
     --warning-solid-strong:         var(--function-warning-600);
     --warning-solid-medium:         var(--function-warning-500);
     --warning-solid-weak:           var(--function-warning-400);
-  
-    --warning-on-solid-strong:      var(--static-white);      
+
+    --warning-on-solid-strong:      var(--static-white);
     --warning-on-solid-weak:        var(--function-warning-1000);
 
     --warning-border-strong:        var(--function-warning-800);
     --warning-border-medium:        var(--function-warning-900);
     --warning-border-weak:          var(--function-warning-1000);
-  
+
     --warning-alpha-strong:         var(--function-warning-600-50);
     --warning-alpha-medium:         var(--function-warning-600-30);
     --warning-alpha-weak:           var(--function-warning-600-10);
-   
-    /* danger */   
+
+    /* danger */
     --danger-background-strong:     var(--function-danger-800);
     --danger-background-medium:     var(--function-danger-1000);
     --danger-background-weak:       var(--static-white);
@@ -351,23 +351,23 @@
     --danger-on-background-strong:  var(--function-danger-100);
     --danger-on-background-medium:  var(--function-danger-400);
     --danger-on-background-weak:    var(--function-danger-600);
-  
+
     --danger-solid-strong:          var(--function-danger-600);
     --danger-solid-medium:          var(--function-danger-500);
     --danger-solid-weak:            var(--function-danger-400);
-  
-    --danger-on-solid-strong:       var(--static-white);      
+
+    --danger-on-solid-strong:       var(--static-white);
     --danger-on-solid-weak:         var(--function-danger-1000);
 
     --danger-border-strong:         var(--function-danger-800);
     --danger-border-medium:         var(--function-danger-900);
     --danger-border-weak:           var(--function-danger-1000);
-  
+
     --danger-alpha-strong:          var(--function-danger-600-50);
     --danger-alpha-medium:          var(--function-danger-600-30);
     --danger-alpha-weak:            var(--function-danger-600-10);
-   
-    /* success */   
+
+    /* success */
     --success-background-strong:    var(--function-success-800);
     --success-background-medium:    var(--function-success-1000);
     --success-background-weak:      var(--static-white);
@@ -375,18 +375,18 @@
     --success-on-background-strong: var(--function-success-100);
     --success-on-background-medium: var(--function-success-400);
     --success-on-background-weak:   var(--function-success-600);
-  
+
     --success-solid-strong:         var(--function-success-600);
     --success-solid-medium:         var(--function-success-500);
     --success-solid-weak:           var(--function-success-400);
-  
-    --success-on-solid-strong:      var(--static-white);      
+
+    --success-on-solid-strong:      var(--static-white);
     --success-on-solid-weak:        var(--function-success-1000);
 
     --success-border-strong:        var(--function-success-800);
     --success-border-medium:        var(--function-success-900);
     --success-border-weak:          var(--function-success-1000);
-  
+
     --success-alpha-strong:         var(--function-success-600-50);
     --success-alpha-medium:         var(--function-success-600-30);
     --success-alpha-weak:           var(--function-success-600-10);
@@ -454,7 +454,7 @@
     --brand-solid-medium:         var(--function-brand-400);
     --brand-solid-weak:           var(--function-brand-300);
 
-    --brand-on-solid-strong:      var(--static-white);      
+    --brand-on-solid-strong:      var(--static-white);
     --brand-on-solid-weak:        var(--function-brand-900);
 }
 
@@ -474,7 +474,7 @@
     --brand-solid-medium:         var(--function-brand-700);
     --brand-solid-weak:           var(--function-brand-600);
 
-    --brand-on-solid-strong:      var(--static-black);      
+    --brand-on-solid-strong:      var(--static-black);
     --brand-on-solid-weak:        var(--function-brand-200);
 }
 
@@ -483,8 +483,8 @@
     --brand-solid-strong:         var(--function-brand-600);
     --brand-solid-medium:         var(--function-brand-500);
     --brand-solid-weak:           var(--function-brand-400);
-  
-    --brand-on-solid-strong:      var(--static-white);      
+
+    --brand-on-solid-strong:      var(--static-white);
     --brand-on-solid-weak:        var(--function-brand-1000);
 }
 
@@ -493,8 +493,8 @@
     --brand-solid-strong:         var(--function-neutral-300);
     --brand-solid-medium:         var(--static-black);
     --brand-solid-weak:           var(--function-neutral-400);
-  
-    --brand-on-solid-strong:      var(--static-white);      
+
+    --brand-on-solid-strong:      var(--static-white);
     --brand-on-solid-weak:        var(--function-neutral-1000);
 }
 
@@ -526,7 +526,7 @@
     --brand-solid-strong:         var(--function-brand-900);
     --brand-solid-medium:         var(--function-brand-800);
     --brand-solid-weak:           var(--function-brand-700);
-  
-    --brand-on-solid-strong:      var(--static-black);      
+
+    --brand-on-solid-strong:      var(--static-black);
     --brand-on-solid-weak:        var(--function-brand-200);
 }

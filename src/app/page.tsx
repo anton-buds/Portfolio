@@ -7,8 +7,9 @@ import { Projects } from "@/components/work/Projects";
 
 import { baseURL, routes } from "@/app/resources";
 import { home, about, person, newsletter } from "@/app/resources/content";
-import { Mailchimp } from "@/components";
+import { Mailchimp, IframeContainer } from "@/components";
 import { Posts } from "@/components/blog/Posts";
+import GradientText from '@/components/gradientText';
 
 export async function generateMetadata() {
   const title = home.title;
@@ -65,15 +66,21 @@ export default function Home() {
           }),
         }}
       />
-      <Column fillWidth paddingY="m" gap="m">
-        <Column maxWidth="s">
-          <RevealFx translateY="4" fillWidth horizontal="start" paddingBottom="m">
-            <Heading wrap="balance" variant="display-strong-l" onBackground="accent-medium">
-              {home.headline}
+      <Column fillWidth paddingY="m" gap="l">
+        <Column maxWidth="l">
+          <RevealFx translateY="4" fillWidth horizontal="center" paddingBottom="m">
+            <Heading wrap="balance" variant="display-strong-xl" onBackground="accent-medium" >
+              <GradientText
+              colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+              animationSpeed={3}
+              showBorder={false}
+              >
+                HI! I'M ANTON
+              </GradientText>
             </Heading>
           </RevealFx>
           <RevealFx translateY="8" delay={0.2} fillWidth horizontal="start" paddingBottom="m">
-            <Text wrap="balance" onBackground="neutral-medium" variant="heading-default-xl">
+            <Text wrap="balance" onBackground="neutral-strong" variant="heading-default-xl">
               {home.subline}
             </Text>
           </RevealFx>
@@ -116,12 +123,56 @@ export default function Home() {
         </Flex>
       )}
       <Projects range={[2]} />
+
+      {/* Project Demo Section */}
+      <Column fillWidth paddingY="m" gap="m">
+        <RevealFx translateY="4" fillWidth horizontal="center" paddingBottom="m">
+          <Heading wrap="balance" variant="display-strong-l" onBackground="accent-medium">
+            PROJECT DEMO
+          </Heading>
+        </RevealFx>
+        <RevealFx translateY="8" delay={0.2} fillWidth horizontal="center" paddingBottom="m">
+          <Text wrap="balance" onBackground="neutral-medium" variant="heading-default-xl">
+            Interactive showcase of my work
+          </Text>
+        </RevealFx>
+        <RevealFx translateY="12" delay={0.4} fillWidth>
+          <IframeContainer
+            src="https://barber-kartell.vercel.app/"
+            title="BARBER KARTELL WEBSITE"
+            description="This is a live demo of one of my projects. You can interact with it directly in this container."
+            height="600px"
+          />
+        </RevealFx>
+          <RevealFx translateY="12" delay={0.4} horizontal="start">
+            <Button
+              id="website"
+              data-border="rounded"
+              href="https://barber-kartell.vercel.app/"
+              variant="tertiary"
+              size="m"
+              arrowIcon
+            >
+              <Flex gap="16" vertical="center">
+                Go to Site
+              </Flex>
+            </Button>
+          </RevealFx>
+      </Column>
+
       {newsletter.display && <Mailchimp newsletter={newsletter} />}
       {/* Contact Section */}
       <Column fillWidth paddingY="m" gap="m">
         <RevealFx translateY="4" fillWidth horizontal="center" paddingBottom="m">
           <Heading wrap="balance" variant="display-strong-l" onBackground="accent-medium">
+            <GradientText
+            colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+            animationSpeed={3}
+            showBorder={false}
+            >
             Get in Touch
+            </GradientText>
+            
           </Heading>
         </RevealFx>
         <RevealFx translateY="8" delay={0.2} fillWidth horizontal="center" paddingBottom="m">

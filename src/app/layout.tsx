@@ -8,6 +8,7 @@ import { baseURL, effects, style } from "@/app/resources";
 
 import { Inter } from "next/font/google";
 import { Source_Code_Pro } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 
 import { person, home } from "@/app/resources/content";
 import { Background, Column, Flex, ToastProvider } from "@/once-ui/components";
@@ -38,6 +39,11 @@ export async function generateMetadata() {
     },
   };
 }
+const headings = DM_Sans({
+  variable: "--font-heading",
+  subsets: ["latin"],
+  display: "swap",
+})
 
 const primary = Inter({
   variable: "--font-primary",
@@ -84,6 +90,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
       data-surface={style.surface}
       data-transition={style.transition}
       className={classNames(
+        headings.variable,
         primary.variable,
         secondary ? secondary.variable : "",
         tertiary ? tertiary.variable : "",

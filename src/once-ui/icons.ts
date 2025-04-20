@@ -21,6 +21,8 @@ import {
   HiCalendarDays,
   HiClipboard,
   HiArrowRight,
+  HiArrowsPointingOut,
+  HiArrowsPointingIn,
 } from "react-icons/hi2";
 
 import {
@@ -64,4 +66,6 @@ export const iconLibrary: Record<string, IconType> = {
   x: FaXTwitter,
   clipboard: HiClipboard,
   arrowUpRightFromSquare: HiArrowTopRightOnSquare,
+  maximize: HiArrowsPointingOut,
+  minimize: HiArrowsPointingIn,
 };

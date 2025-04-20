@@ -44,7 +44,7 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: "mailto:antonbuds7@outlook.com",
+    link: "mailto:antonbuds.pro@gmail.com",
   },
 ];
 
@@ -55,7 +55,7 @@ const home = {
   headline: <>Front-End Developer</>,
   subline: (
     <>
-      I'm {person.firstName}, a Computer engineering student at <InlineCode>Don Honorio Ventura State University</InlineCode>,<br/>where I learned how to craft intuitive and user-friendly UI experiences. I enjoy working on projects that challenge my skills and push me to learn new things.
+      A Computer engineering student at <InlineCode>Don Honorio Ventura State University</InlineCode>,<br/>where I learned how to craft intuitive and user-friendly UI experiences. I enjoy working on projects that challenge my skills and push me to learn new things.
     </>
   ),
 };
