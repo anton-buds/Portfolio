@@ -5,7 +5,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Front-End Developer | Graphic Designer",
+  // role: "Front-End Developer",
   avatar: "/images/Avatar2.jpg",
   location: "Asia/Manila", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Tagalog"], // optional: Leave the array empty if you don't want to display languages
@@ -36,11 +36,11 @@ const social = [
     icon: "linkedin",
     link: "https://www.linkedin.com/in/anton-buduan/",
   },
-  {
-    name: "Facebook",
-    icon: "facebook",
-    link: "https://www.facebook.com/antonbuds/",
-  },
+  // {
+  //   name: "Facebook",
+  //   icon: "facebook",
+  //   link: "https://www.facebook.com/antonbuds/",
+  // },
   {
     name: "Email",
     icon: "email",
@@ -86,37 +86,37 @@ const about = {
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work/Related Experience",
+    title: "Work Experience",
     experiences: [
       {
-        company: "AYMAGICAL LINE (Not Active)",
-        timeframe: "2023 February to April",
-        role: "Web Developer",
+        company: "HOME DEVELOPMENT MUTUAL FUND",
+        timeframe: "2025 March to May",
+        role: "Customer/Sales Support Intern",
         achievements: [
           <>
-            Implemented secure payment processing and automated order confirmation system with email notifications
+            Organizing confidential documents, drafting reports, and maintaining records to streamline daily operations.
           </>,
           <>
-            Created a queue-based order processing system ensuring first-come-first-serve handling of customer orders
+            Managing professional interactions via email, phone, and in-person to enhance customer satisfaction.
           </>,
           <>
-            Integrated customer feedback and review system to enhance product credibility and user trust
+            Supporting cross-functional teams in executing marketing campaigns and sales strategies.
           </>,
           <>
-            Built real-time order tracking functionality and automated shipping status updates
+            Preparing agendas, materials, and follow-up tasks for meetings and presentations.
           </>,
           <>
-            Successfully digitized the business operations, resulting in improved customer experience and streamlined order management
+           Learning organizational protocols and member benefit programs in government financial services.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-         /*  {
-            src: "/images/projects/project-01/AYMAGICALLINE.png",
-            alt: "AYMAGICAL LINE Project",
-            width: 16,
-            height: 9,
-          }, */
+          // {
+          //   src: "/images/projects/project-01/AYMAGICALLINE.png",
+          //   alt: "AYMAGICAL LINE Project",
+          //   width: 16,
+          //   height: 9,
+          // }, 
         ],
       },
       /* IF YOU WANT TO ADD MORE, JUST COPY THE TEMPLATE BELOW AND CHANGE THE DETAILS:
@@ -155,6 +155,10 @@ const about = {
         name: "FreeCodeCamp ",
         description: <>Responsive Web Design</>,
       },
+      {
+        name: "Udemy ",
+        description: <>The Complete Zapier Course</>,
+      },
     ],
   },
   technical: {
@@ -162,7 +166,7 @@ const about = {
     title: "Technical Skills",
     skills: [
       {
-        title: "Software Engineer",
+        title: "Robot Automation",
         description: (
           <>Developed and optimized an automated trash segregation system using C/C++ and embedded systems to enhance accuracy, efficiency, and scalability.</>
         ),
@@ -215,6 +219,22 @@ const about = {
         ],
       },
       {
+        title: "AI Tools",
+        description: (
+          <>Experienced in using AI Tools such as ChatGPT, Cursor, and Claude. Image Generation Tools such as Midjourney and DALL-E, and Video Generation Tools such as Runway.</>
+        ),
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          /* IF YOU WANT TO ADD IMAGES JUST COPY THE TEMPLATE BELOW AND CHANGE THE IMAGE PATH:
+          {
+            src: "/images/projects/project-01/cover-02.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          }, */
+        ],
+      },
+      {
         title: "HTML, CSS, and JavaScript",
         description: (
           <>Proficient in developing web applications with HTML, CSS, and JavaScript</>
@@ -227,24 +247,22 @@ const about = {
             width: 18,
             height: 12,
           }, 
+        ],
+      },
+      {
+        title: "Automation",
+        description: (
+          <>Adept in using automation tools such as Zapier and UI Path</>
+        ),
+        // optional: leave the array empty if you don't want to display images
+        images: [
           {
-            src: "/images/projects/project-01/LoginForm.png",
-            alt: "LoginForm",
+            src: "/images/Udemy-Zapier.jpg",
+            alt: "The Complete Zapier Automation Course",
             width: 18,
             height: 12,
           }, 
-          {
-            src: "/images/projects/project-01/Product_landing_page.png",
-            alt: "Product landing page",
-            width: 18,
-            height: 12,
-          }, 
-          {
-            src: "/images/projects/project-01/Product_landing_page2.png",
-            alt: "Product landing page",
-            width: 18,
-            height: 12,
-          }, 
+          
         ],
       },
     ],
